@@ -7,5 +7,17 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        withGradle() {
+          echo 'gradle'
+        }
+
+      }
+    }
+
+  }
+  environment {
+    name = 'demo'
   }
 }
