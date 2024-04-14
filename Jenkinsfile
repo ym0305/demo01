@@ -1,15 +1,8 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('Test') {
             steps  {
-                sh 'gradle build'
-                input message: 'build stage'
-            }
-        }
-        stage('docker build') {
-            steps {
-                sh 'pwd'
                 input message: 'test stage'
             }
         }
