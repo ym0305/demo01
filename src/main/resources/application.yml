@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: app
+  datasource:
+    url: jdbc:postgresql://localhost:5432/yamin
+    username: yamin
+    password: 1234567890
+server:
+  port: 9981
+
+
+logging:
+  config: classpath:config/log/log4j2-config.xml
